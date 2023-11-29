@@ -1,9 +1,11 @@
 const express = require("express");
 const routes = express.Router();
+const path = require('path')
+const root = require('../utils/path');
 
 routes.use("/add", (req, res, next) => {
-  res.send(
-    "<h1>Add Student!!</h1><br><br><form action ='/store' method ='post'><input type='text' name='name'></input><input type='submit' value='submit'></input></form>"
+  res.sendFile(
+    path.join(root,'views','html','admin.html')
   );
 });
 

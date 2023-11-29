@@ -1,10 +1,12 @@
 const express = require("express");
 const routes = express.Router();
 const path = require('path');
+const root = require('../utils/path')
+
 
 routes.get("/", (req, res, next) => {
-  res.send(
-    "<h1>Home Page!!</h1>"
+  res.sendFile(
+    path.join(root,'views','html','home.html')
   );
 });
 

@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: rgb(255, 197, 222);
+    background: radial-gradient(circle, rgba(255, 197, 222, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-repeat: no-repeat;
+}
+.navbar{
+background-color: rgba(240, 128, 128, 0.279);
+}
+.li{
+    display: flex;
+    justify-content: center;
+}
+
+
+.li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.inbutton{
+    background-color: rgb(107, 107, 205);
+    border-radius: 50px;
+    color: black;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.addh1{
+    text-align: center;
+}
